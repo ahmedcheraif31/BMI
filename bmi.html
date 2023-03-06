@@ -14,11 +14,13 @@
     <h1 id="title" style="text-align: center;">BMI CALCULATOR</h1> 
   </div>
     <div id ="first" style="text-align: center;">
-      <p>Enter your weight</p>
-          <input id="inputKilograms" type="number" placeholder="Enter your weight" oninput="weightConverter(value)" onchange="weightConverter(value)">
-      <p>Enter your height</p>
-          <input  id="inputMeters" type="number" placeholder="Enter your height" oninput="LengthConverter1(value)" onchange="LengthConverter(value)">
+      <p>Enter your weight (KG)</p>
+          <input id="weight" type="number" placeholder="Enter your weight">
+      <p>Enter your height (CM)</p>
+          <input  id="height" type="number" placeholder="Enter your height">
     </div>
+    <button onclick="calculateBMI()">Calculate your BMI</button>
+    <p id="result"></p>
     <script src="bmi.js"></script>
 </body>
 </html>

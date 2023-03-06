@@ -1,26 +1,37 @@
-
-// function that converte the weight on Pounds
-function weightConverter(valNum) {
-    document.getElementById("outputPounds").innerHTML=valNum*2.2046;
-console.log("value : "+valNum)
-
+function calculateBMI(){
+var weight=document.getElementById("weight").value
+var height=(document.getElementById("height").value)/100
+var BMI=weight/(height*height)
+var result=""
+  console.log(weight)
+  console.log(height)
+  if ((!weight) || (!height)){
+    alert("Please enter a valid value")
   }
-// function that converte the weight on Kilograms
+  else {
+        if (BMI <= 18.4) {
+             result = "Your BMI is " + BMI.toFixed(1) + " which means " + "you are Underweight";
+        } 
+        else if (BMI >= 18.5 && BMI <= 24.9) {
+          result = "Your BMI is " + BMI.toFixed(1) + " which means " + "You are Normal";
+        } else if (BMI >= 25 && BMI <= 29.9) {
+          result= "Your BMI is " + BMI.toFixed(1) + " which means " + "You are Overweight";
+        } else if (BMI >= 30) {
+          result= "Your BMI is " + BMI.toFixed(1) + " which means " + "You are Obese";
+        }
+      }
 
-  function convertPoundsToKilograms(pounds) {
-document.getElementById("outputKilograms").innerHTML= pounds * 0.453592;
-  }
+document.getElementById("result").innerHTML=result
+}
 
-// function that converte the length on Metres 
 
-  function LengthConverter(valNum) {
-    document.getElementById("outputMeters").innerHTML=valNum/3.2808;
-  }
 
-// function that converte the length on feets 
 
-  function LengthConverter1(valNum) {
-    document.getElementById("outputFeet").innerHTML=valNum*3.2808;
-  }
-  
+
+
+
+
+
+
+
   // nour
