@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .myDiv {
+          background-color: transparent;
+          text-align: center;
+          text-size-adjust: adjust;
+          line-height: 3em;        }
+        </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     <meta charset="UTF-8">
@@ -20,34 +27,44 @@
           </ul>
       </header> 
 
-    <div>
-        <input id="calc-gender-male" type="radio" name="gender" value="male" checked="">
+
+
+    <div class="myDiv" >
+    
+        <input id="calc-gender-male" type="radio" name="gender" value="male" >
         <label for="calc-gender-male">Male</label>
     </div>
-
-     <div >
+    <div class="myDiv">
       <input id="calc-gender-female" type="radio" name="gender" value="female">
-      <label for="calc-gender-female">Female</label></div>
-      </div>
-
+      <label for="calc-gender-female">Female</label>
+    </div>
+    <div class="myDiv">
       <label for="calc-age" id="calc-age_value">Age: 25</label>
       <input id="calc-age" type="range" value="20" min="13" max="100">
+    </div>
+    <div class="myDiv">
 
       <label for="calc-height" id="calc-height_value">Height: 180cm</label>
       <input id="calc-height" type="range" value="180" min="80" max="250">
+    </div>
+    <div class="myDiv">
 
       <label for="calc-weight" id="calc-weight_value">Weight: 80kg</label>
       <input id="calc-weight" type="range" value="80" min="40" max="200">
+    </div>
+    <div class="myDiv">
 
       <label for="calc-walking" id="calc-walking_value">Walking: 2 hours per week</label>
       <input id="calc-walking" type="range" value="2" min="0" max="50">
+    </div>
+    <div class="myDiv">
 
       <label for="calc-cardio" id="calc-cardio_value">Cardio: 1 hour per week</label>
       <input id="calc-cardio" type="range" value="1" min="0" max="50">
-
+<p id="bmr">  </p>
     </div>
    
-    <p id="bmr">  </p>
+    
    
     <script  src="calories.js"></script>
       

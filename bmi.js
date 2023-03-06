@@ -1,3 +1,4 @@
+
 function calculateBMI(){
 var weight=document.getElementById("weight").value
 var height=(document.getElementById("height").value)/100
