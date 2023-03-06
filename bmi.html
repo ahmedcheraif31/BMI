@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bmi.css">
+
+</head>
+<body>
+       
+    <div class="myDiv">
+        <label>pounds</label>
+        <input   id="inputpounds " type="number" placeholder="pounds" oninput="convertPoundsToKilograms(value)" onchange="convertPoundsToKilograms(value)">
+        <p>Kilograms :<span  id="outputKilograms"></span></p>
+      
+      
+          <label>Feet</label>
+          <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(value)" onchange="LengthConverter(value)">
+        <p>Meters: <span id="outputMeters"></span></p>
+      </div >
+
+      <div>
+
+    <label>Kilograms</label>
+  <input id="inputKilograms" type="number" placeholder="Kilograms" oninput="weightConverter(value)" onchange="weightConverter(value)">
+  <p>Pounds: <span id="outputPounds"></span></p>
+
+  <label>Meters</label>
+  <input  id="inputMeters" type="number" placeholder="Meters" oninput="LengthConverter1(value)" onchange="LengthConverter(value)">
+<p>Feet: <span id="outputFeet"></span></p>
+</div>
+
+<button> submit </button>
+
+
+
+   
+
+    
+
+    <script src="bmi.js"></script>
+
+</body>
+</html>
