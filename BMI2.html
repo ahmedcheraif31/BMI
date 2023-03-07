@@ -5,19 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="BMI2.css">
+
     <title>BMI</title>
 </head>
 <body>
     <header class="header">
-        <h1 class="logo"><a href="#">Flexbox</a></h1>
+        <h1 class="logo"><a href="#">My Healthy Space</a></h1>
           <ul class="main-nav" style="padding-right: 50px;">
               <li><a href="index.html">Home</a></li>
               <li><a href="BMI2.html">BMI</a></li>
               <li><a href="calories.html">Calories</a></li>
               <li><a href="references.html">References</a></li>
           </ul>
-      </header> 
+    </header>
+    <p id="paragraph">BMI is a measurement of a person's leanness or corpulence based on their height and weight, and is intended to quantify tissue mass. <br>
+        It is widely used as a general indicator of whether a person has a healthy body weight for their height. <br> Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight, or obese depending on what range the value falls between.</p>
+    <div id = "container">
+        <div class="slider">
+            <h3>Fix your height</h3>
+            <input id="height" type="range" min="0" max="250" value="0" oninput="rangeValue.innerText = this.value + 'cm'">
+            <p id="rangeValue">0 cm</p>
+            <br>
+            <h3>Fix your weight</h3>
+            <input id= "weight" type="range" min="0" max="200" value="0" oninput="rangeValue2.innerText = this.value+'kg'">
+            <p id="rangeValue2">0 kg</p>
+            <div style="padding-left: 35%;">
+                <button class="button-23" role="button" onclick="calculate()">Calculate</button>
+            </div>
+        </div>
+    </div>
+    <div id="result" class="result"></div>
       
-    
+
+      <script src="bmi.js"></script>
+      <script src='https://code.jquery.com/jquery-2.2.4.js'></script>
+
 </body>
 </html>

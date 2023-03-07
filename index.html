@@ -10,14 +10,48 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="logo"><a href="#">Flexbox</a></h1>
+        <h1 class="logo"><a href="#">My Healthy Space</a></h1>
           <ul class="main-nav" style="padding-right: 50px;">
               <li><a href="index.html">Home</a></li>
               <li><a href="BMI2.html">BMI</a></li>
               <li><a href="calories.html">Calories</a></li>
               <li><a href="references.html">References</a></li>
           </ul>
-      </header> 
-    <p style="float: right; text-align: center;padding-right: 50px;">Take care of your body <br> It's the only place you have to live</p>
+    </header> 
+        <p id="pr1" style="float: right; text-align: center;padding-right: 50px;">Take care of your body <br> It's the only place you have to live</p>
+  
+        <div class="slideshow-containe">
+            <div class="mySlides fade"> 
+                <h3>Why fad diets don't work, according to experts</h3>
+                <p>Description:</p>
+                <p> Eating carbohydrates in moderation may be best for boosting longevity.</p>
+                <img style="width: 30%; height: 30%;" src="https://cdn.mos.cms.futurecdn.net/rbSYdgbCJEfaUWAKznJvvX-1200-80.jpg.webp" alt="">
+                <br><br>
+                <a href="https://www.livescience.com/why-fad-diets-dont-work">Read more</a>
+            </div>
+            <div class="mySlides fade"> 
+                <h3>Gut health: What is it and how does it affect your body?</h3>
+                <p >Description:</p>
+                <p>Gut health isn't just about good digestion. Here's why it's essential for overall health.</p>
+                <img style="width: 30%; height: 30%;" src="https://cdn.mos.cms.futurecdn.net/PrX4Zj2at4rbJKjEy6utdM-1200-80.jpg.webp" alt="">
+                <br><br>
+                <a href="https://www.livescience.com/what-is-gut-health-and-why-is-it-important">Read more</a>
+            </div>
+            <div class="mySlides fade"> 
+                <h3>Your Low Carb Diet Won't Kill You, But It's Probably Not a Good Idea</h3>
+                <p >Description:</p>
+                <p>A new study suggests low-carb diets could be deadly. </p>
+                <img style="width: 30%; height: 30%;" src="https://cdn.mos.cms.futurecdn.net/NVKJySocALg7zbuXum6RnV-1200-80.jpg.webp" alt="">
+                <br><br>
+                <a href="https://www.livescience.com/63453-low-carb-diet-mortality.html">Read more</a>
+            </div>
+           
+            <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlide(1)">&#10095;</a>
+        </div>
+            <br>
+        
+            <script src="home.js"></script>
+            <script src='https://code.jquery.com/jquery-2.2.4.js'></script>       
 </body>
 </html>
